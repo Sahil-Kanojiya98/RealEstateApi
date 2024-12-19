@@ -3,7 +3,7 @@ spring.application.name=RealEstateApi
 server.port=8080
 
 #jpa
-spring.datasource.url=jdbc:mysql://localhost:3306/p1
+spring.datasource.url=jdbc:mysql://localhost:3306/databasename
 spring.datasource.username=username
 spring.datasource.password=password
 

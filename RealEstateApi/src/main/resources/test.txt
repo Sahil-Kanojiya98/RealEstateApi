@@ -1,0 +1,59 @@
+POST: /v1/api/real-estate
+[
+  {
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 1500,
+    "Location": "Mumbai",
+    "SalePrice": 9500000
+  },
+  {
+    "Bedrooms": 4,
+    "Bathrooms": 3,
+    "SquareFootage": 2000,
+    "Location": "Bangalore",
+    "SalePrice": 12000000
+  },
+  {
+    "Bedrooms": 2,
+    "Bathrooms": 1,
+    "SquareFootage": 900,
+    "Location": "Chennai",
+    "SalePrice": 6500000
+  },
+  {
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 1700,
+    "Location": "Delhi",
+    "SalePrice": 11000000
+  },
+  {
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "SquareFootage": 1200,
+    "Location": "Kolkata",
+    "SalePrice": 7500000
+  }
+]
+
+GET /v1/api/real-estate/average-sale-price
+
+GET /v1/api/real-estate/average-sale-price-per-location
+
+GET /v1/api/real-estate/max-sale-price
+
+GET /v1/api/real-estate/min-sale-price
+
+GET /v1/api/real-estate/search-by-price-range
+PARAM: ?minPrice=7000000&maxPrice=10000000
+
+GET /v1/api/real-estate/search-by-location
+PARAM: ?location=Mumbai
+
+GET /v1/api/real-estate/search-by-features
+PARAM: ?minBedrooms=3&minBathrooms=2&minSquareFootage=1500
+
+GET /v1/api/real-estate/search-combined
+PARAM: ?location=Bangalore&minPrice=9000000&maxPrice=15000000&minBedrooms=3&minBathrooms=2&minSquareFootage=1800
+OPTIONAL PARAMS
